@@ -125,7 +125,7 @@ public class CharacterController2D : MonoBehaviour
 		}
 		// If the player should jump...
 		if (m_Grounded && jump)
-		{
+		{ q	
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
@@ -135,7 +135,7 @@ public class CharacterController2D : MonoBehaviour
 
 	private void Flip()
 	{
-		// Switch the way the player is labelled as facing.
+		// Switch the way the player is labeled as facing.
 		m_FacingRight = !m_FacingRight;
 
 		// Multiply the player's x local scale by -1.
